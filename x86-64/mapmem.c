@@ -58,7 +58,7 @@ p2_entry_t * l2map = (p2_entry_t *)PAGE_TABLES;
 
 void mapmem (void)
 {
-	int		i;
+	p2_entry_t i;
 
 	bzero ((char *)l2map, sizeof(p2_entry_t) * 512 * MAPS);
 
