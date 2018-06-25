@@ -4,7 +4,7 @@ include ../mk.64
 OBJS=	start.o page.o long.o bios_generic.o bios_pxe.o bios_disk.o pxecall.o
 OBJS+=	bcopy.o mapmem.o
 
-CFLAGS= -ffreestanding -Os -I../include -Wall -march=x86-64 -fno-stack-protector -nostdlib -nostdinc -fno-builtin -fno-delete-null-pointer-checks
+CFLAGS= -ffreestanding -Os -I../include -Wall -march=x86-64 -fno-stack-protector -nostdlib -nostdinc -fno-delete-null-pointer-checks
 CFLAGS32= -Os -I../include -march=i386
 
 ASFLAGS= -I../include
