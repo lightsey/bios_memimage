@@ -76,8 +76,9 @@ twiddle(void)
 	uint32_t t;
 	printf ("%c", tw & 0xFF);
 	t = tw;
-	tw >>= 8;
-	tw |= tw << 24;
+	t >>= 8;
+	t |= t << 24;
+	tw = t;
 	return;
 }
 #endif
